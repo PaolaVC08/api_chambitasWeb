@@ -61,11 +61,7 @@ public class UserRequestDTO {
     }
     public void setTipoUsuario(String tipoUsuario) {
         this.tipoUsuario = tipoUsuario;
-    }
-
-
-
-    
+    }   
 }
 
 
