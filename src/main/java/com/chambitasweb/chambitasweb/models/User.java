@@ -6,12 +6,15 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 import java.time.LocalDate;
 import java.util.Collection;
 
 import org.springframework.security.core.GrantedAuthority;
 
 @Entity
+@Table(name = "users")  // Nombre de la tabla en la base de datos
 public class User {
 
     @Id

@@ -1,6 +1,7 @@
 package com.chambitasweb.chambitasweb.service;
 
 import com.chambitasweb.chambitasweb.dto.UserRequestDTO;
+import com.chambitasweb.chambitasweb.dto.UserResponseDTO;
 import com.chambitasweb.chambitasweb.models.User;
 import com.chambitasweb.chambitasweb.models.User.Estado;
 import com.chambitasweb.chambitasweb.models.User.TipoUsuario;
