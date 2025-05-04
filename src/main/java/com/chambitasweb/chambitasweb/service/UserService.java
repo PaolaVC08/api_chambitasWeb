@@ -1,10 +1,8 @@
 package com.chambitasweb.chambitasweb.service;
 
 import com.chambitasweb.chambitasweb.dto.UserRequestDTO;
-import com.chambitasweb.chambitasweb.dto.UserResponseDTO;
 import com.chambitasweb.chambitasweb.models.User;
 import com.chambitasweb.chambitasweb.models.User.Estado;
-import com.chambitasweb.chambitasweb.models.User.TipoUsuario;
 import com.chambitasweb.chambitasweb.repository.UserRepository;
 
 import java.util.List;
@@ -41,7 +39,7 @@ public class UserService {
         user.setCorreo(dto.getCorreo());
         user.setContraseña(encoder.encode(dto.getContraseña()));  // Encriptamos la contraseña
        // user.setTipoUsuario(TipoUsuario.valueOf(dto.getTipoUsuario().toUpperCase()));  // Convertir String a Enum
-        user.setTipoUsuario(dto.getTipoUsuario());  // No es necesario usar valueOf si ya es un enum
+        user.setTipoUsuario(dto.getTipoUsuario());  
 
 
 

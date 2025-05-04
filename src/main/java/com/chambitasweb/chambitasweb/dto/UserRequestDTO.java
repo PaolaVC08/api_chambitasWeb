@@ -2,8 +2,13 @@ package com.chambitasweb.chambitasweb.dto;
 
 import java.time.LocalDate;
 
+import java.util.Set;
+
 import com.chambitasweb.chambitasweb.models.User.TipoUsuario;
 
+import jakarta.validation.constraints.*;
+
+@SuppressWarnings("unused")
 public class UserRequestDTO {
 
     private String nombre;
@@ -65,9 +70,6 @@ public class UserRequestDTO {
     public void setTipoUsuario(TipoUsuario tipoUsuario) {
         this.tipoUsuario = tipoUsuario;
     }
-
-
-
 
 }
 
